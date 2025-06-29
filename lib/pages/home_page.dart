@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../config/app_theme.dart';
+import '../config/localization/texts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -8,16 +9,22 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SYggRel Connect'),
+        title: Text(
+          Texts.welcomeMessage,
+          style: TextStyle(color: context.onPrimary),
+        ),
         centerTitle: true,
         backgroundColor: context.primary,
       ),
       body: Center(
         child: Padding(
-          'Welcome to SYggRel Connect',
-          style: TextStyle(
-            fontSize: AppTextSizes().headline,
-            color: context.foreground,
+          padding: EdgeInsets.all(context.paddingMedium),
+          child: Text(
+            Texts.appDescription,
+            style: TextStyle(
+              fontSize: AppTextSizes.defaultInstance.headline,
+              color: context.foreground,
+            ),
           ),
         ),
       ),

@@ -118,6 +118,7 @@ class AppSpacing {
 // ----------------------------
 extension ThemeColors on BuildContext {
   Color get primary => Theme.of(this).colorScheme.primary;
+  Color get onPrimary => Theme.of(this).colorScheme.onPrimary;
   Color get background => Theme.of(this).colorScheme.surface;
   Color get foreground =>
       Theme.of(this).textTheme.bodyMedium?.color ?? Colors.black26;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../config/app_theme.dart';
-import '../config/localization/texts.dart';
+import 'package:syggrel_connect/config/app_theme.dart';
+import 'package:syggrel_connect/config/localization/texts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

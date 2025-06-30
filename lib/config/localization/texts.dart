@@ -1,4 +1,5 @@
 class Texts {
+  static const appTitle = 'SYggRel Connect';
   static const welcomeMessage = 'Welcome to SYggRel Connect';
   static const appDescription =
       'Connect your SYggRel Watch with your Android device';

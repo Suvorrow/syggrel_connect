@@ -1,3 +1,4 @@
+// Page content; UI layout, theming, localization
 import 'package:flutter/material.dart';
 import 'package:syggrel_connect/config/app_theme.dart';
 import 'package:syggrel_connect/config/localization/texts.dart';

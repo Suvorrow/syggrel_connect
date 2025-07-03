@@ -1,6 +1,7 @@
 // import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 
+/// Configuration for responsive design using [ScreenUtil].
 class ScreenUtilConfig {
   // Private constructor to enforce singleton or controlled creation
   const ScreenUtilConfig._inner({

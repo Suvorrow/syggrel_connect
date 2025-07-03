@@ -7,4 +7,7 @@ class Texts {
   static const disconnectButton = 'Disconnect';
   static const settingsSection = 'Settings';
   static const aboutSection = 'About';
+  static const connectionSuccess = 'Connection successful!';
+  static const connectionFailed = 'Connection failed. Please try again.';
+  static const okayButton = 'OK';
 }

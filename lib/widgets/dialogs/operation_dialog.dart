@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:syggrel_connect/config/app_theme.dart';
 import 'package:syggrel_connect/config/localization/texts.dart';
-import 'package:syggrel_connect/config/dialog_sizes.dart';
+import 'package:syggrel_connect/config/sizes_styles.dart';
 
 class OperationDialog extends StatelessWidget {
   final String message;
@@ -16,13 +15,15 @@ class OperationDialog extends StatelessWidget {
         vertical: context.paddingMedium,
       ),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(DialogSizes.cornerRadius),
+        borderRadius: BorderRadius.circular(
+          UIDimensions.defaultInstance.cornerRadius,
+        ),
       ),
       child: Container(
         padding: EdgeInsets.all(context.paddingMedium),
         constraints: BoxConstraints(
-          maxHeight: DialogSizes.maxHeight,
-          maxWidth: DialogSizes.maxWidth,
+          maxHeight: UIDimensions.defaultInstance.maxHeight,
+          maxWidth: UIDimensions.defaultInstance.maxWidth,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -41,7 +42,10 @@ class OperationDialog extends StatelessWidget {
               onPressed: Navigator.of(context).pop,
               style: ElevatedButton.styleFrom(
                 backgroundColor: context.primary,
-                minimumSize: Size(double.infinity, DialogSizes.buttonHeight),
+                minimumSize: Size(
+                  double.infinity,
+                  UIDimensions.defaultInstance.buttonHeight,
+                ),
               ),
               child: Text(
                 Texts.okayButton,

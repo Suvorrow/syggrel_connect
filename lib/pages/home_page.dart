@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
     _getDeviceName();
   }
 
-  Future<void _getDeviceName() async {
+  Future<void> _getDeviceName() async {
     try {
       final deviceInfo = DeviceInfoPlugin();
       final androidInfo = await deviceInfo.androidInfo;

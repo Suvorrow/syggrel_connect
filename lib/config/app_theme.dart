@@ -37,7 +37,7 @@ class AppTheme {
   // Custom TextTheme
   static TextTheme get _textTheme {
     return const TextTheme(
-      bodyMedium: TextStyle(color: Colors.yellow),
+      bodyMedium: TextStyle(color: Colors.deepOrange),
       titleLarge: TextStyle(fontSize: 20),
     );
   }
